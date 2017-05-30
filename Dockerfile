@@ -7,6 +7,7 @@ RUN apt-get update \
         libc6-i386 \
         lib32stdc++6 \
         lib32z1 \
+        openjdk-7-jre-headless \
     && useradd -m jenkins \
     && echo "jenkins:builder" | chpasswd \
     && echo done
