@@ -1,5 +1,5 @@
 # Dockerfile for ICS/JB/KK app builds.
-FROM openjdk:8
+FROM openjdk:7
 
 # Install 32-bit libs needed by Android build tools.
 RUN apt-get update \
