@@ -19,5 +19,8 @@ VOLUME /data/jenkins
 VOLUME /sdk
 ENV ANDROID_HOME=/sdk
 
+# Tests
+COPY run_tests.sh /home/jenkins/run_tests.sh
+
 USER jenkins
 CMD /bin/bash
