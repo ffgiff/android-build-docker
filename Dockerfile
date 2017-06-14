@@ -4,9 +4,11 @@ FROM openjdk:7
 # Install 32-bit libs needed by Android build tools.
 RUN apt-get update \
     && apt-get install -y \
+        file \
         libc6-i386 \
         lib32stdc++6 \
         lib32z1 \
+        make \
     && useradd -m jenkins \
     && echo "jenkins:builder" | chpasswd \
     && echo done
